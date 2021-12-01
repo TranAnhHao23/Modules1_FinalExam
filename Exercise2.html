@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function timViTri(num,arr){
+    function findPosition(num,arr){
         let count = 0;
         for (let i = 0; i < arr.length; i++) {
             if (arr.indexOf(num) !== -1){
@@ -22,7 +22,7 @@
 
     let num = +prompt("Nhập giá trị muốn tìm")
     let arr = [1,2,4,5,7,9,5];
-    timViTri(num, arr);
+    findPosition(num, arr);
 </script>
 </body>
 </html>
