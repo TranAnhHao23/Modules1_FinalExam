@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 3</title>
+</head>
+<body>
+<script>
+    function demNguyenAm(str) {
+        let nguyenAm = ["u", "e", "o", "a", "i"];
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            for (let j = 0; j < nguyenAm.length; j++) {
+                if (str[i].toLowerCase() === nguyenAm[j]) {
+                    count++;
+                }
+            }
+        }
+        if (count === 0) {
+            return false;
+        } else {
+            return count;
+        }
+    }
+
+    // let str = "HelloWorld";
+    let str1 = "Do em biEt Anh Dang Nghi Gi"
+    alert(demNguyenAm(str1));
+
+
+</script>
+</body>
+</html>
